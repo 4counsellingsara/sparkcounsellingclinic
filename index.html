@@ -1,118 +1,303 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spark Counselling Clinic</title>
+
+  <title>Spark Counselling Clinic | Counselling in Kelowna, BC</title>
+  <meta name="description" content="Compassionate, personalized counselling in Kelowna, BC. Spark Counselling Clinic offers a welcoming space for connection, healing, and personal growth." />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo">Spark Counselling Clinic</a>
+      <a href="index.html" class="logo" aria-label="Spark Counselling Clinic home">
+        <span class="brand-sun" aria-hidden="true">✳</span>
+        <span class="brand-text">
+          <span class="brand-name">SPARK</span>
+          <span class="brand-subtitle">COUNSELLING CLINIC</span>
+        </span>
+      </a>
 
-      <nav class="nav-links">
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="main-navigation" class="nav-links" aria-label="Main navigation">
         <a href="services.html">Services</a>
         <a href="areas.html">Areas of Focus</a>
         <a href="approach.html">My Approach</a>
-        <a href="book.html">Book Now</a>
+        <a href="book.html" class="nav-book">Book Now</a>
       </nav>
-
-      <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
     </div>
   </header>
 
   <main>
+    <!-- HERO -->
     <section id="home" class="hero-section">
       <div class="container hero-content">
-        <p class="eyebrow">Compassionate Care</p>
+        <p class="eyebrow">WELCOME TO SPARK COUNSELLING CLINIC</p>
 
-        <h1>Support for your emotional wellbeing in a caring, safe space.</h1>
+        <h1>Let's rediscover your spark together.</h1>
 
-        <p>
-          Personalized counselling for individuals, children, youth, couples, and families.
-          Take the first step toward greater balance and clarity.
+        <p class="hero-description">
+          Life can feel overwhelming at times, and you don't have
+          to navigate those challenges alone. Whether you're
+          seeking support, clarity, healing, or personal growth,
+          I'm here to walk alongside you.
         </p>
 
         <div class="hero-actions">
-          <a href="services.html" class="button primary">View Services</a>
-          <a href="book.html" class="button secondary">Book Now</a>
+          <a href="book.html" class="button primary">Book an Appointment</a>
+          <a href="approach.html" class="button secondary">Learn More</a>
         </div>
       </div>
     </section>
 
-    <section class="section-light">
+    <!-- WELCOME -->
+    <section class="welcome-section">
+      <div class="container welcome-inner">
+        <span class="section-symbol" aria-hidden="true">✳</span>
+
+        <p class="eyebrow">A SPACE FOR YOU</p>
+
+        <h2>Come as you are.</h2>
+
+        <p>
+          At Spark Counselling Clinic, I believe everyone deserves
+          a space where they feel heard, understood, and accepted.
+          Counselling isn't about having all the answers or
+          becoming someone different. It's about reconnecting
+          with yourself, discovering your strengths, and
+          finding a way forward that feels meaningful to you.
+        </p>
+
+        <p>
+          Wherever you are in your journey, you're welcome here.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICES INTRODUCTION -->
+    <section class="support-section">
+      <div class="container support-inner">
+        <div class="support-copy">
+          <p class="eyebrow">PERSONALIZED SUPPORT</p>
+
+          <h2>Support that meets you where you are.</h2>
+
+          <p>
+            Every person brings their own experiences,
+            perspectives, and needs into counselling.
+            My approach is collaborative, compassionate,
+            and tailored to what matters most to you.
+          </p>
+
+          <p>
+            Spark Counselling Clinic welcomes individuals,
+            children, youth, couples, and families seeking
+            support through life's challenges and transitions.
+          </p>
+
+          <a href="services.html" class="button primary">
+            Explore Services
+          </a>
+        </div>
+
+        <div class="support-image">
+          <img
+            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=85"
+            alt="Sunlight illuminating a peaceful forest"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- MEET SARA -->
+    <section class="meet-section">
+      <div class="container meet-inner">
+        <div class="meet-visual">
+          <div class="meet-photo-placeholder">
+            <span class="section-symbol" aria-hidden="true">✳</span>
+            <span>Meet Sara</span>
+          </div>
+        </div>
+
+        <div class="meet-content">
+          <p class="eyebrow">THE PERSON BEHIND SPARK</p>
+
+          <h2>Hi, I'm Sara.</h2>
+
+          <p>
+            I'm Sara Park, the counsellor behind Spark
+            Counselling Clinic.
+          </p>
+
+          <p>
+            I believe meaningful change begins with feeling
+            genuinely seen, heard, and understood. My goal
+            is to create a welcoming, nonjudgmental space
+            where you can explore your experiences at your
+            own pace.
+          </p>
+
+          <p>
+            My practice is grounded in a person-centred,
+            trauma-informed approach. I value collaboration,
+            curiosity, and recognizing the strengths you
+            already carry within you.
+          </p>
+
+          <p>
+            Together, we can explore what matters to you
+            and work toward meaningful, lasting change.
+          </p>
+
+          <a href="approach.html" class="button outline">
+            Get to Know My Approach
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPLORE -->
+    <section class="section-light explore-section">
       <div class="container">
-        <h2>Explore</h2>
+        <div class="section-heading">
+          <p class="eyebrow">DISCOVER MORE</p>
+          <h2>Explore Spark Counselling Clinic</h2>
+          <p>
+            Learn more about the support available and
+            what you can expect from counselling.
+          </p>
+        </div>
 
         <div class="card-grid">
           <article class="card link-card">
-            <img 
-              src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1200&q=80" 
-              alt="Calm lake at dawn with still water" 
-              loading="lazy" 
+            <img
+              src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1200&q=80"
+              alt="Calm lake surrounded by nature"
+              loading="lazy"
             />
-            <h3>Services</h3>
-            <p>
-              Discover the counselling support available for individuals,
-              couples, and families.
-            </p>
-            <a href="services.html" class="button tertiary">View</a>
+
+            <div class="card-content">
+              <h3>Services</h3>
+              <p>Discover counselling services designed to support your unique needs.</p>
+              <a href="services.html" class="button tertiary">Learn More →</a>
+            </div>
           </article>
 
           <article class="card link-card">
-            <img 
-              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" 
-              alt="Looking up at a lush forest canopy" 
-              loading="lazy" 
+            <img
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+              alt="Lush trees reaching toward the sky"
+              loading="lazy"
             />
-            <h3>Areas of Focus</h3>
-            <p>
-              See the specific concerns and goals supported through counselling.
-            </p>
-            <a href="areas.html" class="button tertiary">View</a>
+
+            <div class="card-content">
+              <h3>Areas of Focus</h3>
+              <p>Explore the experiences and challenges we can work through together.</p>
+              <a href="areas.html" class="button tertiary">Learn More →</a>
+            </div>
           </article>
 
           <article class="card link-card">
-            <img 
-              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80" 
-              alt="Soft sunrise over rolling hills" 
-              loading="lazy" 
+            <img
+              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80"
+              alt="Sunlight filtering through a forest"
+              loading="lazy"
             />
-            <h3>My Approach</h3>
-            <p>
-              Understand how sessions are structured and the type of support offered.
-            </p>
-            <a href="approach.html" class="button tertiary">View</a>
+
+            <div class="card-content">
+              <h3>My Approach</h3>
+              <p>Learn about my counselling philosophy and what sessions may look like.</p>
+              <a href="approach.html" class="button tertiary">Learn More →</a>
+            </div>
           </article>
 
           <article class="card link-card">
-            <img 
-              src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80" 
-              alt="Forest path with sunlight filtering through trees" 
-              loading="lazy" 
+            <img
+              src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80"
+              alt="Peaceful natural landscape"
+              loading="lazy"
             />
-            <h3>Book Now</h3>
-            <p>
-              Set up your first session quickly and easily.
-            </p>
-            <a href="book.html" class="button tertiary">View</a>
+
+            <div class="card-content">
+              <h3>Book Now</h3>
+              <p>Ready to connect? Take the next step at a pace that feels right for you.</p>
+              <a href="book.html" class="button tertiary">Book Now →</a>
+            </div>
           </article>
         </div>
+      </div>
+    </section>
+
+    <!-- FINAL INVITATION -->
+    <section class="closing-section">
+      <div class="container closing-inner">
+        <span class="section-symbol" aria-hidden="true">✳</span>
+
+        <h2>Your journey starts here.</h2>
+
+        <p>
+          You don't need to have everything figured out
+          before reaching out. Whether you're ready to
+          begin counselling or simply have a few questions,
+          I'd love to connect with you.
+        </p>
+
+        <a href="book.html" class="button closing-button">
+          Let's Connect
+        </a>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-contact">
-        <p>Email: info@sparkcounsellingclinic.com</p>
-        <p>Phone: (778) 801-5366</p>
-        <p>Address: Kelowna, BC</p>
+      <div class="footer-brand">
+        <h3>SPARK</h3>
+        <p>COUNSELLING CLINIC</p>
+        <p class="footer-tagline">
+          Let's rediscover your spark together.
+        </p>
       </div>
 
-      <p>© 2026 Spark Counselling Clinic</p>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>
+          <a href="mailto:info@sparkcounsellingclinic.com">
+            info@sparkcounsellingclinic.com
+          </a>
+        </p>
+        <p>
+          <a href="tel:+17788015366">(778) 801-5366</a>
+        </p>
+        <p>Kelowna, British Columbia</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <a href="services.html">Services</a>
+        <a href="areas.html">Areas of Focus</a>
+        <a href="approach.html">My Approach</a>
+        <a href="book.html">Book Now</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Spark Counselling Clinic. All rights reserved.</p>
     </div>
   </footer>
 
