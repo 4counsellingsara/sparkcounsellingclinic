@@ -1,39 +1,48 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // Load shared header partial and initialize header behavior
-  const headerContainer = document.getElementById('site-header');
-  if (headerContainer) {
-    fetch('header.html')
-      .then((res) => res.text())
-      .then((html) => {
-        headerContainer.innerHTML = html;
-        initHeader();
-      })
-      .catch(() => {
-        console.warn('Failed to load header.html');
-        initHeader();
-      });
-  } else {
-    initHeader();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuButton = document.querySelector(".menu-toggle");
+  const navigation = document.querySelector(".nav-links");
+
+  if (!menuButton || !navigation) return;
+
+  function closeMenu() {
+    navigation.classList.remove("active");
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.setAttribute("aria-label", "Open navigation menu");
   }
 
-  function initHeader() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+  menuButton.addEventListener("click", () => {
+    const isOpen = navigation.classList.toggle("active");
 
-    if (menuToggle) {
-      menuToggle.addEventListener('click', () => {
-        navLinks?.classList.toggle('open');
-        menuToggle.textContent = navLinks?.classList.contains('open') ? '✕' : '☰';
-      });
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.setAttribute(
+      "aria-label",
+      isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
+  });
+
+  navigation.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+      closeMenu();
     }
+  });
 
-    document.querySelectorAll('.nav-links a').forEach((link) => {
-      link.addEventListener('click', () => {
-        if (navLinks?.classList.contains('open')) {
-          navLinks.classList.remove('open');
-          if (menuToggle) menuToggle.textContent = '☰';
-        }
-      });
-    });
-  }
+  document.addEventListener("click", event => {
+    if (
+      !navigation.contains(event.target) &&
+      !menuButton.contains(event.target)
+    ) {
+      closeMenu();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 900) {
+      closeMenu();
+    }
+  });
 });
