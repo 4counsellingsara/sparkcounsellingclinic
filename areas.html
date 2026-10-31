@@ -1,110 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Areas of Focus - Spark Counselling Clinic</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore areas of focus including anxiety, depression, trauma, grief, relationships and life transitions at Spark Counselling Clinic.">
+  <title>Areas of Focus | Spark Counselling Clinic</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo">Spark Counselling Clinic</a>
-
-      <nav class="nav-links">
+      <a href="index.html" class="logo" aria-label="Spark Counselling Clinic home">
+        <img src="spark-logo.png" alt="Spark Counselling Clinic" class="site-logo">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu"
+        aria-expanded="false" aria-controls="main-navigation">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
         <a href="services.html">Services</a>
-        <a href="areas.html">Areas of Focus</a>
+        <a href="areas.html" aria-current="page">Areas of Focus</a>
         <a href="approach.html">My Approach</a>
-        <a href="book.html">Book Now</a>
+        <a href="book.html" class="nav-book">Book Now</a>
       </nav>
-
-      <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
     </div>
   </header>
 
   <main>
-    <section class="page-hero areas-hero">
-      <div class="container hero-content">
-        <p class="eyebrow">Areas of Focus</p>
-        <h1>Support for life’s challenges</h1>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">YOU DON'T HAVE TO FACE IT ALONE</p>
+        <h1>Areas of Focus</h1>
         <p>
-          Counselling can help you explore difficult experiences, build coping skills,
-          and move toward greater emotional clarity and balance.
+          Whatever you're experiencing, your story matters.
+          Together, we can create space for understanding,
+          healing, and growth.
         </p>
       </div>
     </section>
 
-    <section class="section-light">
+    <section class="content-section">
+      <div class="container narrow-content center-text">
+        <span class="gold-spark" aria-hidden="true">✧</span>
+        <h2>There's room for all of you here.</h2>
+        <p>
+          You don't need to fit your experiences into a
+          particular category to seek counselling.
+        </p>
+        <p>
+          Sometimes you know exactly what you'd like to work
+          on. Other times, you may simply know that something
+          doesn't feel quite right. Both are welcome.
+        </p>
+      </div>
+    </section>
+
+    <section class="tinted-section">
       <div class="container">
-        <div class="card-grid">
-          <article class="card">
+        <div class="section-heading">
+          <p class="eyebrow">HOW I CAN SUPPORT YOU</p>
+          <h2>Common areas we can explore</h2>
+        </div>
+
+        <div class="focus-grid">
+          <article class="focus-card">
+            <span class="focus-number">01</span>
             <h3>Anxiety & Stress</h3>
             <p>
-              Tools to manage overwhelming feelings, calm your mind, and restore balance.
+              Navigating worry, overwhelm, self-doubt,
+              uncertainty, and the pressures of everyday life.
             </p>
           </article>
 
-          <article class="card">
-            <h3>Relationship Challenges</h3>
-            <p>
-              Support for improving connection, trust, boundaries, and communication with loved ones.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Life Transitions</h3>
-            <p>
-              Guidance for navigating career changes, major decisions, identity shifts, and personal growth.
-            </p>
-          </article>
-
-          <article class="card">
+          <article class="focus-card">
+            <span class="focus-number">02</span>
             <h3>Depression & Low Mood</h3>
             <p>
-              A compassionate space to explore sadness, low motivation, and emotional heaviness.
+              Exploring feelings of sadness, disconnection,
+              low motivation, hopelessness, or loss of interest.
             </p>
           </article>
 
-          <article class="card">
-            <h3>Self-Esteem</h3>
+          <article class="focus-card">
+            <span class="focus-number">03</span>
+            <h3>Trauma & Difficult Experiences</h3>
             <p>
-              Support for building confidence, self-compassion, and a stronger sense of self-worth.
+              Making sense of painful experiences while
+              building safety, self-understanding, and
+              emotional awareness.
             </p>
           </article>
 
-          <article class="card">
-            <h3>Trauma & Emotional Healing</h3>
+          <article class="focus-card">
+            <span class="focus-number">04</span>
+            <h3>Grief & Loss</h3>
             <p>
-              A gentle, trauma-informed approach to understanding past experiences and emotional patterns.
+              Navigating grief following death, separation,
+              changes in relationships, or other meaningful losses.
+            </p>
+          </article>
+
+          <article class="focus-card">
+            <span class="focus-number">05</span>
+            <h3>Relationships & Attachment</h3>
+            <p>
+              Exploring communication, boundaries,
+              relationship patterns, self-worth,
+              and interpersonal challenges.
+            </p>
+          </article>
+
+          <article class="focus-card">
+            <span class="focus-number">06</span>
+            <h3>Life Transitions & Identity</h3>
+            <p>
+              Finding your footing through change,
+              personal growth, shifting roles,
+              and questions about who you are.
             </p>
           </article>
         </div>
+      </div>
+    </section>
 
-        <div class="book-cta">
-          <h2>Looking for support?</h2>
-          <p>
-            You do not need to have everything figured out before beginning counselling.
-            Sessions can start with where you are right now.
-          </p>
-          <a href="book.html" class="button primary">Book Now</a>
-        </div>
+    <section class="content-section ivory-section">
+      <div class="container narrow-content center-text">
+        <p class="eyebrow">BEYOND LABELS</p>
+        <h2>You are more than what you're going through.</h2>
+        <p>
+          Although these are common reasons people seek
+          counselling, they don't define who you are.
+          You bring strengths, values, relationships,
+          and experiences that are equally important.
+        </p>
+        <p>
+          Our work together is guided by your individual
+          needs rather than a predetermined path.
+        </p>
+      </div>
+    </section>
+
+    <section class="closing-section">
+      <div class="container closing-inner">
+        <h2>Let's explore what matters to you.</h2>
+        <p>
+          If you're wondering whether counselling
+          might be helpful, you're welcome to
+          start with a complimentary consultation.
+        </p>
+        <a href="https://sparkcounsellingclinic.janeapp.com/"
+           class="button gold-button" target="_blank"
+           rel="noopener noreferrer">
+          Book a Consultation
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-contact">
-        <p>Email: info@sparkcounselling.com</p>
-        <p>Phone: (778) 801-5366</p>
-        <p>Address: Kelowna, BC</p>
+      <div class="footer-brand">
+        <h3>Spark</h3>
+        <p>COUNSELLING CLINIC</p>
+        <p>Let's rediscover your spark together.</p>
       </div>
-
-      <p>© 2026 Spark Counselling Clinic</p>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:info@sparkcounsellingclinic.com">info@sparkcounsellingclinic.com</a></p>
+        <p>Kelowna, British Columbia</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <a href="services.html">Services</a>
+        <a href="areas.html">Areas of Focus</a>
+        <a href="approach.html">My Approach</a>
+        <a href="book.html">Book Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Spark Counselling Clinic. All rights reserved.</p>
     </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
