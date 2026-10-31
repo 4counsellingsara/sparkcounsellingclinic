@@ -1,81 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book Now - Spark Counselling Clinic</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a counselling session or complimentary consultation at Spark Counselling Clinic in Kelowna, BC.">
+  <title>Book an Appointment | Spark Counselling Clinic</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div id="site-header"></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Spark Counselling Clinic home">
+        <img src="spark-logo.png" alt="Spark Counselling Clinic" class="site-logo">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu"
+        aria-expanded="false" aria-controls="main-navigation">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
+        <a href="services.html">Services</a>
+        <a href="areas.html">Areas of Focus</a>
+        <a href="approach.html">My Approach</a>
+        <a href="book.html" class="nav-book" aria-current="page">Book Now</a>
+      </nav>
+    </div>
+  </header>
 
   <main>
-    <section class="page-hero book-hero">
-      <div class="container hero-content">
-        <p class="eyebrow">Book Now</p>
-        <h1>Take the first step toward support</h1>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">TAKE THE FIRST STEP</p>
+        <h1>Let's connect.</h1>
         <p>
-          Schedule a session today and begin your journey toward greater wellbeing.
+          Reaching out can feel like a big step.
+          Whether you're ready to begin counselling
+          or would like to ask a few questions first,
+          you're welcome to start wherever
+          you feel comfortable.
         </p>
       </div>
     </section>
 
-    <section class="section-light book-section">
+    <section class="content-section">
       <div class="container">
-        <div class="book-cta">
-          <h2>Request a Booking</h2>
-
-          <p>
-            Please complete the form below and I will respond as soon as possible.
-          </p>
-
-          <form class="contact-form">
-            <label>
-              Name
-              <input type="text" placeholder="Your name" required />
-            </label>
-
-            <label>
-              Email
-              <input type="email" placeholder="Your email" required />
-            </label>
-
-            <label>
-              Preferred Session Type
-              <select required>
-                <option value="">Select one</option>
-                <option>Individual Counselling</option>
-                <option>Couples Counselling</option>
-                <option>Family Support</option>
-                <option>Online Session</option>
-              </select>
-            </label>
-
-            <label>
-              Message
-              <textarea rows="5" placeholder="Tell me about your scheduling needs" required></textarea>
-            </label>
-
-            <button type="submit" class="button primary">Request Booking</button>
-          </form>
+        <div class="section-heading">
+          <p class="eyebrow">APPOINTMENTS</p>
+          <h2>Choose how you'd like to begin.</h2>
         </div>
+
+        <div class="service-grid">
+          <article class="service-card featured">
+            <p class="eyebrow">GET TO KNOW EACH OTHER</p>
+            <h3>Complimentary Consultation</h3>
+            <p class="service-price">Free</p>
+            <p>
+              A chance to briefly discuss what you're
+              looking for, ask questions, and explore
+              whether working together feels like
+              a good fit.
+            </p>
+            <p>No pressure or commitment.</p>
+            <a href="https://sparkcounsellingclinic.janeapp.com/"
+               class="button primary" target="_blank"
+               rel="noopener noreferrer">
+              Book a Consultation
+            </a>
+          </article>
+
+          <article class="service-card">
+            <p class="eyebrow">READY TO BEGIN</p>
+            <h3>Individual Counselling</h3>
+            <p class="service-price">$100 / 50 minutes</p>
+            <p>
+              Make space to explore your experiences,
+              navigate challenges, and work toward
+              what matters to you.
+            </p>
+            <p>
+              Virtual counselling appointments
+              are available.
+            </p>
+            <a href="https://sparkcounsellingclinic.janeapp.com/"
+               class="button primary" target="_blank"
+               rel="noopener noreferrer">
+              Book a Session
+            </a>
+          </article>
+        </div>
+
+        <p class="booking-note">
+          You'll be directed to Spark Counselling Clinic's
+          Jane booking platform to view current
+          appointment availability.
+        </p>
+      </div>
+    </section>
+
+    <section class="tinted-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">HELPFUL INFORMATION</p>
+          <h2>A few things to know</h2>
+        </div>
+
+        <div class="focus-grid">
+          <article class="focus-card">
+            <h3>Virtual Appointments</h3>
+            <p>
+              Virtual counselling sessions are available
+              through Jane's online appointment platform.
+              Please choose a private, comfortable
+              location for your session.
+            </p>
+          </article>
+
+          <article class="focus-card">
+            <h3>Payment</h3>
+            <p>
+              Individual sessions are currently $100
+              for 50 minutes. Payment is collected
+              following your appointment.
+            </p>
+            <p>
+              E-transfers may be sent to
+              info@sparkcounsellingclinic.com.
+            </p>
+          </article>
+
+          <article class="focus-card">
+            <h3>Insurance Coverage</h3>
+            <p>
+              Professional registrations are pending.
+              Sessions may not currently be eligible
+              for reimbursement through extended
+              health insurance plans.
+            </p>
+            <p>Please verify your coverage with your insurer.</p>
+          </article>
+
+          <article class="focus-card">
+            <h3>Cancellation Policy</h3>
+            <p>
+              Please provide at least 24 hours'
+              notice if you need to cancel
+              or reschedule an appointment.
+            </p>
+            <p>
+              Late cancellations and missed appointments
+              may be charged the full session fee,
+              as outlined in your informed consent.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section center-text">
+      <div class="container narrow-content">
+        <p class="eyebrow">QUESTIONS ARE WELCOME</p>
+        <h2>Not sure where to start?</h2>
+        <p>
+          If you'd like to learn a little more before booking,
+          you're welcome to reach out with general questions.
+        </p>
+        <p>
+          For your privacy, please avoid including
+          sensitive personal or clinical information
+          in ordinary email.
+        </p>
+        <a href="mailto:info@sparkcounsellingclinic.com"
+           class="button outline">
+          Email Sara
+        </a>
+      </div>
+    </section>
+
+    <section class="closing-section">
+      <div class="container closing-inner">
+        <h2>Whenever you're ready.</h2>
+        <p>
+          You deserve support that feels right for you.
+          I'd be happy to connect.
+        </p>
+        <a href="https://sparkcounsellingclinic.janeapp.com/"
+           class="button gold-button" target="_blank"
+           rel="noopener noreferrer">
+          View Available Appointments
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-contact">
-        <p>Email: info@sparkcounselling.com</p>
-        <p>Phone: (778) 801-5366</p>
-        <p>Address: Kelowna, BC</p>
+      <div class="footer-brand">
+        <h3>Spark</h3>
+        <p>COUNSELLING CLINIC</p>
+        <p>Let's rediscover your spark together.</p>
       </div>
-
-      <p>© 2026 Spark Counselling Clinic</p>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:info@sparkcounsellingclinic.com">info@sparkcounsellingclinic.com</a></p>
+        <p>Kelowna, British Columbia</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <a href="services.html">Services</a>
+        <a href="areas.html">Areas of Focus</a>
+        <a href="approach.html">My Approach</a>
+        <a href="book.html">Book Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Spark Counselling Clinic. All rights reserved.</p>
     </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
