@@ -1,5 +1,7 @@
-/* SPARK COUNSELLING CLINIC */
-/* Mobile Navigation */
+/* =========================================
+   SPARK COUNSELLING CLINIC
+   MOBILE NAVIGATION
+   ========================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -10,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const menuIcon = menuButton.querySelector("span");
 
-  // Close mobile menu
+  // Close the mobile menu
   function closeMenu() {
     navigation.classList.remove("active");
 
@@ -25,9 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Toggle mobile menu
+  // Open or close menu
   menuButton.addEventListener("click", () => {
-
     const isOpen = navigation.classList.toggle("active");
 
     menuButton.setAttribute(
@@ -47,19 +48,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Close menu after selecting a link
+  // Close menu when a navigation link is selected
   navigation.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", closeMenu);
   });
 
-  // Close menu with Escape
+  // Close menu with Escape key
   document.addEventListener("keydown", event => {
     if (event.key === "Escape") {
       closeMenu();
     }
   });
 
-  // Close menu when clicking outside it
+  // Close menu when clicking outside
   document.addEventListener("click", event => {
     if (
       !navigation.contains(event.target) &&
@@ -69,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Reset navigation on desktop
+  // Reset navigation when switching to desktop
   window.addEventListener("resize", () => {
     if (window.innerWidth > 950) {
       closeMenu();
