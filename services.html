@@ -1,99 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services - Spark Counselling Clinic</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore counselling services, appointments and fees at Spark Counselling Clinic in Kelowna, BC.">
+  <title>Services | Spark Counselling Clinic</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo">Spark Counselling Clinic</a>
-
-      <nav class="nav-links">
-        <a href="services.html">Services</a>
+      <a href="index.html" class="logo" aria-label="Spark Counselling Clinic home">
+        <img src="spark-logo.png" alt="Spark Counselling Clinic" class="site-logo">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu"
+        aria-expanded="false" aria-controls="main-navigation">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
+        <a href="services.html" aria-current="page">Services</a>
         <a href="areas.html">Areas of Focus</a>
         <a href="approach.html">My Approach</a>
-        <a href="book.html">Book Now</a>
+        <a href="book.html" class="nav-book">Book Now</a>
       </nav>
-
-      <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
     </div>
   </header>
 
   <main>
-    <section class="page-hero services-hero">
-      <div class="container hero-content">
-        <p class="eyebrow">Counselling Services</p>
-        <h1>Services</h1>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">HOW WE CAN WORK TOGETHER</p>
+        <h1>Counselling Services</h1>
         <p>
-          Supportive counselling for individuals, couples, and families in a caring,
-          respectful, and collaborative space.
+          Compassionate, personalized support to help you
+          navigate challenges, reconnect with yourself,
+          and move toward meaningful change.
         </p>
       </div>
     </section>
 
-    <section class="section-dark">
+    <section class="content-section">
+      <div class="container narrow-content center-text">
+        <span class="gold-spark" aria-hidden="true">✧</span>
+        <h2>Your experience matters.</h2>
+        <p>
+          There's no one-size-fits-all approach to counselling.
+          Every person brings their own story, strengths,
+          challenges, and hopes into the room.
+        </p>
+        <p>
+          My goal is to offer a supportive, collaborative
+          environment where we can explore what matters
+          most to you, at a pace that feels comfortable.
+        </p>
+      </div>
+    </section>
+
+    <section class="tinted-section">
       <div class="container">
-        <div class="card-grid">
-          <article class="card">
+        <div class="section-heading">
+          <p class="eyebrow">APPOINTMENT OPTIONS</p>
+          <h2>Ways to connect</h2>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <p class="eyebrow">GETTING STARTED</p>
+            <h3>Complimentary Consultation</h3>
+            <p class="service-price">Free</p>
+            <p>
+              An opportunity to briefly discuss your
+              counselling needs, ask questions, and explore
+              whether working together feels like a good fit.
+            </p>
+            <p>There's no pressure or obligation to continue.</p>
+            <a href="https://sparkcounsellingclinic.janeapp.com/"
+               class="button primary" target="_blank"
+               rel="noopener noreferrer">
+              Book a Consultation
+            </a>
+          </article>
+
+          <article class="service-card">
+            <p class="eyebrow">PERSONALIZED SUPPORT</p>
             <h3>Individual Counselling</h3>
+            <p class="service-price">$100 / 50 minutes</p>
             <p>
-              One-on-one sessions focused on emotional wellbeing, self-awareness,
-              coping skills, life transitions, stress, anxiety, depression, and personal growth.
+              Individual sessions provide space to explore
+              your thoughts, emotions, experiences, and
+              relationships in a supportive environment.
             </p>
-          </article>
-
-          <article class="card">
-            <h3>Couples Counselling</h3>
             <p>
-              Support for couples who want to improve communication, understand conflict patterns,
-              rebuild trust, and strengthen emotional connection.
+              Sessions are tailored to your needs, goals,
+              and preferences.
             </p>
-          </article>
-
-          <article class="card">
-            <h3>Family Support</h3>
-            <p>
-              Guidance for families navigating change, conflict, stress, communication challenges,
-              and relationship repair in a supportive environment.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Virtual Counselling</h3>
-            <p>
-              Online counselling options for clients who prefer flexible, accessible support
-              from the comfort of their own space.
-            </p>
+            <a href="https://sparkcounsellingclinic.janeapp.com/"
+               class="button primary" target="_blank"
+               rel="noopener noreferrer">
+              Book a Session
+            </a>
           </article>
         </div>
+      </div>
+    </section>
 
-        <div class="book-cta">
-          <h2>Ready to begin?</h2>
+    <section class="content-section">
+      <div class="container two-column">
+        <div class="section-copy">
+          <p class="eyebrow">FLEXIBLE AND ACCESSIBLE</p>
+          <h2>Counselling that fits your life.</h2>
           <p>
-            Taking the first step can feel difficult, but support is available when you are ready.
+            Virtual counselling allows you to connect from
+            a private, comfortable space using Jane's
+            secure online appointment platform.
           </p>
-          <a href="book.html" class="button primary">Book Now</a>
+          <p>
+            Please check the booking calendar for current
+            appointment availability and formats.
+          </p>
+          <a href="book.html" class="button outline">
+            Booking Information
+          </a>
         </div>
+        <div class="arched-image">
+          <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85"
+            alt="Peaceful landscape surrounded by nature"
+            loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section center-text ivory-section">
+      <div class="container narrow-content">
+        <p class="eyebrow">FEES AND INSURANCE</p>
+        <h2>Transparent and straightforward.</h2>
+        <p>
+          Individual counselling sessions are currently
+          $100 for 50 minutes. Payment is collected
+          following your appointment.
+        </p>
+        <p>
+          As my professional registrations are pending,
+          counselling services may not currently qualify
+          for reimbursement under extended health
+          insurance plans. Please confirm coverage
+          directly with your insurer.
+        </p>
+        <p>
+          Fees and coverage information will be updated
+          if my professional registration status changes.
+        </p>
+      </div>
+    </section>
+
+    <section class="closing-section">
+      <div class="container closing-inner">
+        <h2>Ready to take the next step?</h2>
+        <p>
+          You don't have to know exactly where to begin.
+          We can figure that out together.
+        </p>
+        <a href="https://sparkcounsellingclinic.janeapp.com/"
+           class="button gold-button" target="_blank"
+           rel="noopener noreferrer">
+          Book an Appointment
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-contact">
-        <p>Email: info@sparkcounselling.com</p>
-        <p>Phone: (778) 801-5366</p>
-        <p>Address: Kelowna, BC</p>
+      <div class="footer-brand">
+        <h3>Spark</h3>
+        <p>COUNSELLING CLINIC</p>
+        <p>Let's rediscover your spark together.</p>
       </div>
-
-      <p>© 2026 Spark Counselling Clinic</p>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:info@sparkcounsellingclinic.com">info@sparkcounsellingclinic.com</a></p>
+        <p>Kelowna, British Columbia</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <a href="services.html">Services</a>
+        <a href="areas.html">Areas of Focus</a>
+        <a href="approach.html">My Approach</a>
+        <a href="book.html">Book Now</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Spark Counselling Clinic. All rights reserved.</p>
     </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
